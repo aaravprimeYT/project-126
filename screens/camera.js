@@ -59,8 +59,8 @@ export default class PickImage extends React.Component{
 
     selectPicture = async () => {
         try{
-            let result = await ImagePicker.launchImageLibraryAsync({
-              mediaTypes: ImagePicker.MediaTypeOptions.All,
+            let result = await imagePicker.launchImageLibraryAsync({
+              mediaTypes: imagePicker.MediaTypeOptions.All,
               allowsEditing: true,
               aspect: [4, 3],
                   quality: 1,
